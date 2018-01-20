@@ -7,7 +7,9 @@
 .backgroundDiv {
   position: relative;
   top: 50%;
-  transform: translate(0%, -50%); }
+  transform: translate(0%, -50%);
+  max-width: 1015px;
+  margin: auto; }
   .backgroundDiv img {
     width: 100%; }
 
