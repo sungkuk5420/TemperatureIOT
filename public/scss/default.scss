@@ -2,14 +2,8 @@
 
 #main{
   border:1px solid #ddd;
-  //width: 1745px;
-  //height: 895px;
   width:100%;
   height:100%;
-  //background-image: url(/bg.png);
-  //background-repeat: no-repeat;
-  //background-size: contain;
-  //background-position: center;
   position: fixed;
 }
 
@@ -17,11 +11,22 @@
   position: relative;
   top: 50%;
   transform: translate(0%, -50%);
-  max-width: 1015px;
-  margin: auto;
-  img{
-    width:100%;
+
+  &.widthMode{
+    margin: auto;
+    img{
+      width:100%;
+    }
   }
+
+  &.heightMode{
+    margin: auto;
+    height: 100%;
+    img{
+      height:100%;
+    }
+  }
+
 }
   .title{
     font-size:30px;

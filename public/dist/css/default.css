@@ -7,11 +7,16 @@
 .backgroundDiv {
   position: relative;
   top: 50%;
-  transform: translate(0%, -50%);
-  max-width: 1015px;
-  margin: auto; }
-  .backgroundDiv img {
-    width: 100%; }
+  transform: translate(0%, -50%); }
+  .backgroundDiv.widthMode {
+    margin: auto; }
+    .backgroundDiv.widthMode img {
+      width: 100%; }
+  .backgroundDiv.heightMode {
+    margin: auto;
+    height: 100%; }
+    .backgroundDiv.heightMode img {
+      height: 100%; }
 
 .title {
   font-size: 30px;

@@ -1,0 +1,1 @@
+!function(e){var i;function d(){var i=e(window),d=e(".backgroundDiv");i.height()/i.width()<.58?(d.removeClass("widthMode").addClass("heightMode"),d.width(d.find("img").width())):(d.removeAttr("style"),d.removeClass("heightMode").addClass("widthMode"))}e(window).resize(function(){clearTimeout(i),i=setTimeout(d,250)})}(jQuery);

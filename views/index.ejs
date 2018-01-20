@@ -7,7 +7,7 @@
   </head>
   <body>
        <div id="main" >
-           <div class="backgroundDiv">
+           <div class="backgroundDiv widthMode">
                <img src="/bg.png" class="" alt="">
                <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
                    <div class="textDiv">
@@ -18,7 +18,7 @@
        </div>
 
        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-       <script src="/dist/js/userScript.js"></script>
+       <script src="/dist/js/script.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
     <script>
@@ -110,7 +110,6 @@
 
         });
         function changeTemperature(){
-            console.log('aa');
             app._data.datas.forEach(function(item,index){
                 if(index != 0){
                     var randomTemperature = Math.floor(Math.random() * 7) + 20;
