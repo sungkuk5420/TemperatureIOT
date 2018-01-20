@@ -7,9 +7,12 @@
   </head>
   <body>
        <div id="main" >
-           <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
-               <div class="textDiv">
-                   <span class="text" >{{item.value}}<span class="miniFont">℃</span></span>
+           <div class="backgroundDiv">
+               <img src="/bg.png" class="" alt="">
+               <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
+                   <div class="textDiv">
+                       <span class="text" >{{item.value}}<span class="miniFont">℃</span></span>
+                   </div>
                </div>
            </div>
        </div>

@@ -1,12 +1,15 @@
 #main {
   border: 1px solid #ddd;
-  width: 1745px;
-  height: 895px;
-  background-image: url(/bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: fixed;
-  background-position: bottom; }
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+
+.backgroundDiv {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%); }
+  .backgroundDiv img {
+    width: 100%; }
 
 .title {
   font-size: 30px;
@@ -16,8 +19,8 @@
 
 .circle {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 8%;
+  height: 15%;
   border-radius: 50%; }
   .circle.red {
     background: radial-gradient(ellipse at center, #ffffff29 29%, #f95a5a 100%); }
@@ -35,49 +38,42 @@
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 1em; }
   .circle.position0 {
     display: none; }
   .circle.position1 {
-    left: 313px;
-    top: 515px; }
+    left: 12%;
+    bottom: 30%; }
   .circle.position2 {
-    left: 390px;
-    top: 355px; }
+    left: 19%;
+    bottom: 45%; }
   .circle.position3 {
-    left: 500px;
-    top: 250px; }
+    left: 28%;
+    top: 30%; }
   .circle.position4 {
-    left: 565px;
-    top: 131px; }
-    .circle.position4 .textDiv {
-      height: 55px;
-      width: 55px;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      margin: auto;
-      margin-top: 27%; }
+    left: 30%;
+    top: 15%; }
   .circle.position5 {
-    left: 710px;
-    top: 200px; }
+    left: 40%;
+    top: 20%; }
   .circle.position6 {
-    right: 750px;
-    top: 290px; }
+    left: 50%;
+    top: 30%; }
   .circle.position7 {
-    right: 627px;
-    top: 320px; }
+    left: 59%;
+    top: 35%; }
   .circle.position8 {
-    right: 500px;
-    top: 360px; }
+    left: 67%;
+    top: 40%; }
   .circle.position9 {
-    right: 350px;
-    top: 430px; }
+    right: 16%;
+    top: 46%; }
   .circle.position10 {
-    right: 850px;
-    top: 420px; }
+    left: 44%;
+    top: 46%; }
   .circle.position11 {
-    right: 545px;
-    top: 500px; }
+    left: 33%;
+    bottom: 27%; }
     .circle.position11 .textDiv {
       height: 55px;
       width: 55px;
@@ -86,8 +82,8 @@
       margin: auto;
       margin-top: 27%; }
   .circle.position12 {
-    right: 1010px;
-    top: 520px; }
+    left: 42%;
+    bottom: 23%; }
     .circle.position12 .textDiv {
       height: 55px;
       width: 55px;
@@ -96,8 +92,8 @@
       margin: auto;
       margin-top: 27%; }
   .circle.position13 {
-    right: 884px;
-    top: 560px; }
+    right: 29%;
+    top: 55%; }
     .circle.position13 .textDiv {
       height: 55px;
       width: 55px;
@@ -106,8 +102,8 @@
       margin: auto;
       margin-top: 27%; }
   .circle.position14 {
-    right: 611px;
-    top: 633px; }
+    right: 33%;
+    bottom: 16%; }
   .circle.position15 {
-    right: 450px;
-    top: 680px; }
+    right: 22.5%;
+    bottom: 10.5%; }
