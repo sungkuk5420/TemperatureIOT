@@ -1,0 +1,113 @@
+#main {
+  border: 1px solid #ddd;
+  width: 1745px;
+  height: 895px;
+  background-image: url(/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  background-position: bottom; }
+
+.title {
+  font-size: 30px;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center; }
+
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; }
+  .circle.red {
+    background: radial-gradient(ellipse at center, #ffffff29 29%, #f95a5a 100%); }
+  .circle.blue {
+    background: radial-gradient(ellipse at center, #ffffff29 29%, #6393c1 100%); }
+  .circle.green {
+    background: radial-gradient(ellipse at center, #ffffff29 29%, #2f940d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .circle .miniFont {
+    font-size: 15px; }
+  .circle .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 20px; }
+  .circle.position0 {
+    display: none; }
+  .circle.position1 {
+    left: 313px;
+    top: 515px; }
+  .circle.position2 {
+    left: 390px;
+    top: 355px; }
+  .circle.position3 {
+    left: 500px;
+    top: 250px; }
+  .circle.position4 {
+    left: 565px;
+    top: 131px; }
+    .circle.position4 .textDiv {
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%; }
+  .circle.position5 {
+    left: 710px;
+    top: 200px; }
+  .circle.position6 {
+    right: 750px;
+    top: 290px; }
+  .circle.position7 {
+    right: 627px;
+    top: 320px; }
+  .circle.position8 {
+    right: 500px;
+    top: 360px; }
+  .circle.position9 {
+    right: 350px;
+    top: 430px; }
+  .circle.position10 {
+    right: 850px;
+    top: 420px; }
+  .circle.position11 {
+    right: 545px;
+    top: 500px; }
+    .circle.position11 .textDiv {
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%; }
+  .circle.position12 {
+    right: 1010px;
+    top: 520px; }
+    .circle.position12 .textDiv {
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%; }
+  .circle.position13 {
+    right: 884px;
+    top: 560px; }
+    .circle.position13 .textDiv {
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%; }
+  .circle.position14 {
+    right: 611px;
+    top: 633px; }
+  .circle.position15 {
+    right: 450px;
+    top: 680px; }

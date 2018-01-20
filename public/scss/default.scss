@@ -1,0 +1,146 @@
+
+
+#main{
+  border:1px solid #ddd;
+  width: 1745px;
+  height: 895px;
+  background-image: url(/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  background-position: bottom;
+}
+  .title{
+    font-size:30px;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+.circle{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  &.red{
+    background: radial-gradient(ellipse at center, #ffffff29 29%, #f95a5a 100%);
+  }
+  &.blue{
+    background: radial-gradient(ellipse at center, #ffffff29 29%, #6393c1 100%);
+  }
+  &.green{
+//    background-color: rgba(41, 197, 31, 0.2901960784313726);
+    background: radial-gradient(ellipse at center, #ffffff29 29%, #2f940d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+
+  .miniFont{
+    font-size: 15px;
+  }
+  .text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &.position0{
+    display:none;
+  }
+  &.position1{
+    left: 313px;
+    top: 515px;
+  }
+  &.position2{
+    left: 390px;
+    top: 355px;
+  }
+  &.position3{
+    left: 500px;
+    top: 250px;
+  }
+  &.position4{
+    .textDiv{
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%;
+    }
+    left: 565px;
+    top: 131px;
+  }
+  &.position5{
+    left: 710px;
+    top: 200px;
+  }
+  &.position6{
+    right: 750px;
+    top: 290px;
+  }
+  &.position7{
+    right: 627px;
+    top: 320px;
+  }
+  &.position8{
+    right: 500px;
+    top: 360px;
+  }
+  &.position9{
+    right: 350px;
+    top: 430px;
+  }
+  &.position10{
+    right: 850px;
+    top: 420px;
+  }
+  &.position11{
+    .textDiv{
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%;
+    }
+    right: 545px;
+    top: 500px;
+  }
+  &.position12{
+    .textDiv{
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%;
+    }
+    right: 1010px;
+    top: 520px;
+  }
+  &.position13{
+    .textDiv{
+      height: 55px;
+      width: 55px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 27%;
+    }
+    right: 884px;
+    top: 560px;
+  }
+  &.position14{
+    right: 611px;
+    top: 633px;
+  }
+  &.position15{
+    right: 450px;
+    top: 680px;
+  }
+
+}

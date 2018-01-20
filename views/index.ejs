@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/dist/css/default.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+       <div id="main" >
+           <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
+               <div class="textDiv">
+                   <span class="text" >{{item.value}}<span class="miniFont">℃</span></span>
+               </div>
+           </div>
+       </div>
+
+       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+       <script src="/dist/js/userScript.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script>
+        var app = undefined;
+        $(document).ready(function(){
+            app = new Vue({
+                el: '#main',
+                data: {
+                    datas: [
+                        {
+                           'value' : '24.5',
+                           'color' : 'red'
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },{
+                            'value' : '',
+                            'color' : ''
+                        },
+                        {
+                            'value' : '',
+                            'color' : ''
+                        },
+
+                    ]
+                }
+                ,
+                computed: {
+                    getClass: function() {
+                        console.log(this.color);
+                        return this.color;
+                    }
+                }
+            });
+            changeTemperature();
+            setInterval(function() {
+                changeTemperature();
+            }, 3000);
+
+
+        });
+        function changeTemperature(){
+            console.log('aa');
+            app._data.datas.forEach(function(item,index){
+                if(index != 0){
+                    var randomTemperature = Math.floor(Math.random() * 7) + 20;
+                    var randomTemperature2 = Math.floor(Math.random() * 10) + 1;
+                    var color = randomTemperature < 22 ?  'blue' : (randomTemperature < 24 ? 'green' : 'red');
+                    app._data.datas[index].value = randomTemperature+'.'+(randomTemperature2>5?5:0);
+                    app._data.datas[index].color = color;
+                }
+            });
+        }
+
+    </script>
+  </body>
+</html>
