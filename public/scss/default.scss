@@ -105,36 +105,39 @@
   }
   &.position11{
     .textDiv{
-      height: 55px;
-      width: 55px;
+      height: 25%;
+      width: 50%;
       background-color: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       margin: auto;
-      margin-top: 27%;
+      margin-top: 55%;
+      transform: translate(0%,-50%);
     }
     left: 33%;
     bottom: 27%;
   }
   &.position12{
     .textDiv{
-      height: 55px;
-      width: 55px;
+      height: 25%;
+      width: 50%;
       background-color: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       margin: auto;
-      margin-top: 27%;
+      margin-top: 55%;
+      transform: translate(0%,-50%);
     }
     left: 42%;
     bottom: 23%;
   }
   &.position13{
     .textDiv{
-      height: 55px;
-      width: 55px;
+      height: 25%;
+      width: 50%;
       background-color: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       margin: auto;
-      margin-top: 27%;
+      margin-top: 55%;
+      transform: translate(0%,-50%);
     }
     right: 29%;
     top: 55%;
