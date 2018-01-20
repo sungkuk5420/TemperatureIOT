@@ -11,14 +11,12 @@
         var $window = $(window);
         var $bgDiv = $('.backgroundDiv');
 
-        console.log($window.height());
-        console.log($window.width());
+        // console.log($window.height());
+        // console.log($window.width());
 
         if(($window.height() / $window.width()) < 0.58){
             $bgDiv.removeClass('widthMode').addClass('heightMode');
-            $bgDiv.width($bgDiv.find('img').width());
         }else{
-            $bgDiv.removeAttr('style');
             $bgDiv.removeClass('heightMode').addClass('widthMode');
         }
     };
