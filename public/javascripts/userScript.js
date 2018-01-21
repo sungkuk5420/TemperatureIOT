@@ -28,4 +28,6 @@
         resizeTimer = setTimeout(resizeFunction, 250);
     });
 
+    setTimeout(resizeFunction, 100);
+
 })(jQuery);
