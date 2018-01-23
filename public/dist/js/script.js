@@ -1,1 +1,0 @@
-!function(e){var i;function o(){var i=e(window),o=e(".backgroundDiv");i.height()/i.width()<.58?o.removeClass("widthMode").addClass("heightMode"):o.removeClass("heightMode").addClass("widthMode")}e(window).resize(function(){clearTimeout(i),i=setTimeout(o,250)}),setTimeout(o,100)}(jQuery);
