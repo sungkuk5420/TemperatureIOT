@@ -1,7 +1,7 @@
 <template>
    <div id="main" >
        <div class="backgroundDiv widthMode">
-           <img src="./assets/bg.png" class="" alt="">
+           <img src="/bg.png" class="" alt="">
            <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
                <div class="textDiv">
                    <span class="text" >{{item.value}}<span class="miniFont">℃</span></span>
@@ -85,10 +85,19 @@ export default {
       ]
     }
   },
-  beforeCreate () {
+  beforeMount () {
     var thisObj = this;
+    this.changeColor();
     setInterval(function() {
-      thisObj.datas.forEach(function(item,index){
+      thisObj.changeColor();
+    }, 3000);
+  },
+  updated() {
+    console.log('updated');
+  },
+  methods:{
+    changeColor:function(){
+      this.datas.forEach(function(item,index){
         if(index != 0){
           var randomTemperature = Math.floor(Math.random() * 7) + 20;
           var randomTemperature2 = Math.floor(Math.random() * 10) + 1;
@@ -97,10 +106,7 @@ export default {
           item.color = color;
         }
       });
-    }, 3000);
-  },
-  updated() {
-    console.log('updated');
+    }
   }
 };
 </script>
