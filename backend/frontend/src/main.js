@@ -1,8 +1,15 @@
 import Vue from 'vue'
-import Main from './Main.vue'
+import Main from './components/Main.vue'
+import Vuetify from 'vuetify'
 
+Vue.use(Vuetify);
 Vue.component('Main', Main);
 var app = undefined;
+app = new Vue({
+  el: '#app',
+  render: h => h(Main)
+})
+
 document.addEventListener('DOMContentLoaded', function() {
   (function($) {
 
@@ -35,8 +42,3 @@ document.addEventListener('DOMContentLoaded', function() {
   })(jQuery);
 });
 
-
-app = new Vue({
-  el: '#app',
-  render: h => h(Main)
-})

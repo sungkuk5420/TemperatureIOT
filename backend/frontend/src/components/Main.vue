@@ -1,17 +1,20 @@
+
 <template>
    <div id="main" >
        <div class="backgroundDiv widthMode">
-           <img src="/bg.png" class="" alt="">
+           <img src="../assets/bg.png" class="" alt="">
            <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
                <div class="textDiv">
                    <span class="text" >{{item.value}}<span class="miniFont">℃</span></span>
                </div>
            </div>
+           <v-slider prepend-icon="volume_up" v-model="media"></v-slider>
        </div>
     </div>
 </template>
 
 <script>
+import slider from './slider.vue'
 
 export default {
   name: 'Main',
@@ -101,12 +104,15 @@ export default {
         if(index != 0){
           var randomTemperature = Math.floor(Math.random() * 7) + 20;
           var randomTemperature2 = Math.floor(Math.random() * 10) + 1;
-          var color = randomTemperature < 22 ?  'blue' : (randomTemperature < 24 ? 'green' : 'red');
+          var color = randomTemperature < 22 ?  'circle-blue' : (randomTemperature < 24 ? 'circle-green' : 'circle-red');
           item.value = randomTemperature+'.'+(randomTemperature2>5?5:0);
           item.color = color;
         }
       });
     }
+  },
+  conponents:{
+    'slider' : slider
   }
 };
 </script>
@@ -159,13 +165,13 @@ export default {
     height: 15%;
     border-radius: 50%;
 
-    &.red{
+    &.circle-red{
       background: radial-gradient(ellipse at center, #ffffff29 29%, #f95a5a 100%);
     }
-    &.blue{
+    &.circle-blue{
       background: radial-gradient(ellipse at center, #ffffff29 29%, #6393c1 100%);
     }
-    &.green{
+    &.circle-green{
       //    background-color: rgba(41, 197, 31, 0.2901960784313726);
       background: radial-gradient(ellipse at center, #ffffff29 29%, #2f940d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
