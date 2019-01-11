@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parcel Experiments</title>
+    <link rel="stylesheet" type="text/css" href="./style.scss">
+</head>
+<body>
+    <div id="main" >
+        <div class="backgroundDiv widthMode">
+            <img src="/bg.png" class="" alt="">
+            <div class="circle " v-for="(item, index) in datas" v-bind:class="['position' + index,datas[index].color]">
+                <div class="textDiv">
+                    <span class="text" >{{item.value}}<span class="miniFont">℃</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
