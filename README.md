@@ -1,19 +1,11 @@
-# parcel-start-kit
+# 사무실 온도 실시간 표시 웹
 
-Setting up a professional project with Parcel as a code bundler.
-
-## Feater
-
-* ES6 with Bebel
-* SCSS
-* CSS Modules
-* Typography.js
-* Build for production
-
+사무실의 온도를 IOT로 센서를 이용해 실시간으로 표시합니다.
+데모 사이트에 표시되는 온도는 더미 데이터입니다.
 
 ## Git Clone
 
-```git clone https://github.com/sungkuk5420/parcel-start-kit.git```
+```git clone https://github.com/sungkuk5420/TemperatureIOT.git```
 
 ## NPM Install
 
@@ -26,3 +18,7 @@ Setting up a professional project with Parcel as a code bundler.
 ## Build
 
 ```npm run-script build```
+
+## 데모 사이트
+
+https://sungkuk5420.github.io/TemperatureIOT/
